@@ -1,0 +1,12 @@
+{
+    "description": "Duelo Obi Wan Kenobi vs Darth Vader", 
+    "external_url": "https://diplomadouc.s3.sa-east-1.amazonaws.com/1", 
+    "image": "https://diplomadouc.s3.sa-east-1.amazonaws.com/nft.jpg", 
+    "name": "NFT Demo",
+    "attributes": [
+        {
+            "trait_type": "frase",
+            "value": "Use the force"
+        }
+     ]
+  }
