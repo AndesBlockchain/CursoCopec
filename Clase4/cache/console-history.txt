@@ -1,0 +1,16 @@
+exit()
+exit
+end
+await counter.counter()
+await counter.decrement()
+await counter.counter()
+counter = await ethers.getContractAt("CounterV2",address)
+address="0x22FF6dB615f1ED40FF85eb19CA4EaAC1E2B66866"
+exit
+exit()
+await counter.decrement()
+await counter.counter()
+await counter.increment()
+await counter.counter()
+counter = await ethers.getContractAt("Counter",address)
+address="0x22FF6dB615f1ED40FF85eb19CA4EaAC1E2B66866"
