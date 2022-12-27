@@ -1,0 +1,1683 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/Greeter.sol": {
+      "lastModificationDate": 1666993190126,
+      "contentHash": "f43d4b26f1a44261fcb6946997f2cdf1",
+      "sourceName": "contracts/Greeter.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/interfaces/ISemaphore.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Greeter"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/interfaces/ISemaphore.sol": {
+      "lastModificationDate": 1666991978171,
+      "contentHash": "ca71a0629a59e2b25ecc46218681ceed",
+      "sourceName": "@semaphore-protocol/contracts/interfaces/ISemaphore.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": [
+        "ISemaphore"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/Semaphore.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "c8a620c7edd1c9e69258460c1a5814a0",
+      "sourceName": "@semaphore-protocol/contracts/Semaphore.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/ISemaphore.sol",
+        "./interfaces/IVerifier.sol",
+        "./base/SemaphoreCore.sol",
+        "./base/SemaphoreGroups.sol"
+      ],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": [
+        "Semaphore"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/base/SemaphoreGroups.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "fa90cefb8aa6de6e6fcd6203ec2e50cf",
+      "sourceName": "@semaphore-protocol/contracts/base/SemaphoreGroups.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SemaphoreConstants.sol",
+        "../interfaces/ISemaphoreGroups.sol",
+        "@zk-kit/incremental-merkle-tree.sol/IncrementalBinaryTree.sol",
+        "@openzeppelin/contracts/utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": [
+        "SemaphoreGroups"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/interfaces/IVerifier.sol": {
+      "lastModificationDate": 1666991978171,
+      "contentHash": "514d92496c7ddcd4a6d320bde57a4ca1",
+      "sourceName": "@semaphore-protocol/contracts/interfaces/IVerifier.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": [
+        "IVerifier"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/base/SemaphoreCore.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "68cea5057cf83b6a3a0e704a6c97f485",
+      "sourceName": "@semaphore-protocol/contracts/base/SemaphoreCore.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ISemaphoreCore.sol",
+        "../interfaces/IVerifier.sol"
+      ],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": [
+        "SemaphoreCore"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@zk-kit/incremental-merkle-tree.sol/IncrementalBinaryTree.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "3043b4cc7588efcfe0373c94361024bb",
+      "sourceName": "@zk-kit/incremental-merkle-tree.sol/IncrementalBinaryTree.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Hashes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "IncrementalBinaryTree"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/base/SemaphoreConstants.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "cc21995e030f8fdaa3bb5ef65684911c",
+      "sourceName": "@semaphore-protocol/contracts/base/SemaphoreConstants.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/interfaces/ISemaphoreGroups.sol": {
+      "lastModificationDate": 1666991978171,
+      "contentHash": "d9e32ee126cd7a57a94820cc63443518",
+      "sourceName": "@semaphore-protocol/contracts/interfaces/ISemaphoreGroups.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": [
+        "ISemaphoreGroups"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@zk-kit/incremental-merkle-tree.sol/Hashes.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "5608c306e4611be06d045d9399f44a58",
+      "sourceName": "@zk-kit/incremental-merkle-tree.sol/Hashes.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "PoseidonT3",
+        "PoseidonT6"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/interfaces/ISemaphoreCore.sol": {
+      "lastModificationDate": 1666991978171,
+      "contentHash": "7d7e27d196c49f75245fb4358c46e497",
+      "sourceName": "@semaphore-protocol/contracts/interfaces/ISemaphoreCore.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.4"
+      ],
+      "artifacts": [
+        "ISemaphoreCore"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/Semaphore.sol": {
+      "lastModificationDate": 1666993509067,
+      "contentHash": "628edd6f0b4baacf2ec370c8ca211acd",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/Semaphore.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/Semaphore.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier16.sol": {
+      "lastModificationDate": 1666993509066,
+      "contentHash": "ffb89ab4834d218668337a63a5b8afbf",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier16.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier16.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier16.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "ede0476febcf235d2902f2d022c4ee9d",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier16.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier16"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier17.sol": {
+      "lastModificationDate": 1666993509066,
+      "contentHash": "e6457049cbe0411629ad709fd1dc0c5d",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier17.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier17.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier17.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "185a59381c3b76559f51fdfb8b813fdc",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier17.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier17"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier18.sol": {
+      "lastModificationDate": 1666993509066,
+      "contentHash": "8159c5366f4cb7c033e52a69c6589ff9",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier18.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier18.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier18.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "dae09c5cc24a5728369d7e0dc70f05b3",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier18.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier18"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier19.sol": {
+      "lastModificationDate": 1666993509066,
+      "contentHash": "20e28aace1b86a8a196628bdf5f7574b",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier19.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier19.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier19.sol": {
+      "lastModificationDate": 1666991978171,
+      "contentHash": "ac502c3f879a9d6189971f63546e2f2b",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier19.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier19"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier20.sol": {
+      "lastModificationDate": 1666993509066,
+      "contentHash": "6d8727515fdc14a681b206f8bab27468",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier20.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier20.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "637bb1a0316e7934875273b54003977e",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier20.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier20"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier21.sol": {
+      "lastModificationDate": 1666993509067,
+      "contentHash": "b018e14a3142794c9598cdeb6ff8020d",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier21.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier21.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier21.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "5d0b50fc01391b1136b85a63e719fce9",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier21.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier21"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier22.sol": {
+      "lastModificationDate": 1666993509067,
+      "contentHash": "d22f9cdb9d6593c8f99c01fe6642489d",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier22.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier22.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier22.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "7eb5328530a89ceb7136dfef80243927",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier22.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier22"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier23.sol": {
+      "lastModificationDate": 1666993509067,
+      "contentHash": "2eedf67c7ebeb303c6b1582ce4bce47b",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier23.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier23.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier23.sol": {
+      "lastModificationDate": 1666991978171,
+      "contentHash": "884292b289068930325abd9291e42168",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier23.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier23"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier24.sol": {
+      "lastModificationDate": 1666993509067,
+      "contentHash": "238e7c258afb2e185c2cc7a982f045a1",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier24.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier24.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier24.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "15829aed0036f53c6adf0bffbaef7104",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier24.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier24"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier25.sol": {
+      "lastModificationDate": 1666993509067,
+      "contentHash": "cc7dcb55881f4e0e1ddb84371f7eb9e5",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier25.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier25.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier25.sol": {
+      "lastModificationDate": 1666991978170,
+      "contentHash": "460039af249c1a40ce0c0567083b61b7",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier25.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier25"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier26.sol": {
+      "lastModificationDate": 1666993509067,
+      "contentHash": "d18647e0ac521e18815eae3cc811b07b",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier26.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier26.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier26.sol": {
+      "lastModificationDate": 1666991978171,
+      "contentHash": "4a05c54b24b699e86a486034d401173b",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier26.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier26"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier27.sol": {
+      "lastModificationDate": 1666993509067,
+      "contentHash": "6a33bc9723cca5e060885f414d54c514",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier27.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier27.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier27.sol": {
+      "lastModificationDate": 1666991978171,
+      "contentHash": "6da301e25842800610fbab8af440f6a6",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier27.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier27"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier28.sol": {
+      "lastModificationDate": 1666993509067,
+      "contentHash": "75e3386bed210accf312e519bf3fa631",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier28.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier28.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier28.sol": {
+      "lastModificationDate": 1666991978171,
+      "contentHash": "aba2e8f4a4e0a64c6acb4e962386e00a",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier28.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier28"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier29.sol": {
+      "lastModificationDate": 1666993509067,
+      "contentHash": "2663346d452adcaaaa842c57cdeb1b58",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier29.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier29.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier29.sol": {
+      "lastModificationDate": 1666991978171,
+      "contentHash": "7399bf43221d98d9da18ce2a019f18f8",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier29.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier29"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier30.sol": {
+      "lastModificationDate": 1666993509067,
+      "contentHash": "c97d99eedf9ffc9a5bcf2e1bd8d596fc",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier30.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier30.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier30.sol": {
+      "lastModificationDate": 1666991978171,
+      "contentHash": "568934e051d6cde8cf7556f0d449d5e8",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier30.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier30"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier31.sol": {
+      "lastModificationDate": 1666993509067,
+      "contentHash": "0515f20f77479c01daf5e9dc5d4b6f3d",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier31.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier31.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier31.sol": {
+      "lastModificationDate": 1666991978171,
+      "contentHash": "1123bbc8f62c3985a0651edca5d4eb23",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier31.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier31"
+      ]
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier32.sol": {
+      "lastModificationDate": 1666993509067,
+      "contentHash": "331f27e2e028032f6e0cac6f2a1f46e5",
+      "sourceName": "contracts/hardhat-dependency-compiler/@semaphore-protocol/contracts/verifiers/Verifier32.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@semaphore-protocol/contracts/verifiers/Verifier32.sol"
+      ],
+      "versionPragmas": [
+        ">0.0.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/patriciolopez/workspace/semaphore-example/node_modules/@semaphore-protocol/contracts/verifiers/Verifier32.sol": {
+      "lastModificationDate": 1666991978171,
+      "contentHash": "be72b93113c0abba7ec7b32f50c9780c",
+      "sourceName": "@semaphore-protocol/contracts/verifiers/Verifier32.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Pairing",
+        "Verifier32"
+      ]
+    }
+  }
+}
